@@ -30,3 +30,8 @@ void Food::Foodinit() {
 		break;
 	}
 }
+
+const float Food::givePoint() const
+{
+	return this->point;
+}

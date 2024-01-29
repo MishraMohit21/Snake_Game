@@ -13,8 +13,16 @@ class Game
 	std::vector<Snake> Snake_Body;
 	sf::RectangleShape Walls[4];
 
-	Food food;
+	unsigned total;
 
+	Food food;
+	
+	sf::Font font;
+	sf::Text printPoint;
+
+	float Point;
+
+	void initFont();
 	void initVar();
 	void initWindow();
 	void initwalls();
@@ -48,6 +56,7 @@ public:
 	void update();
 	void updateSnake();
 	void updateFood();
+	void updateText();
 
 	// Render
 
@@ -55,6 +64,6 @@ public:
 	void renerSnake();
 	void renderWall();
 	void renderFood();
-
+	void renderText(sf::RenderTarget& target);
 };
 

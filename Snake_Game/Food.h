@@ -10,6 +10,7 @@ class Food : public sf::CircleShape
 public:
 	
 	void Foodinit();
+	const float givePoint() const;
 	
 };
 

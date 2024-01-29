@@ -5,10 +5,15 @@ void Snake::initVariable(sf::VideoMode vm)
 	this->x = rand() % vm.width;
 	this->y = rand() % vm.height;
 
+	this->initColor();
 
-	this->setFillColor(sf::Color::White);
+}
+
+void Snake::initColor()
+{
+	this->setFillColor(color);
 	this->setPosition(sf::Vector2f(x, y));
-	this->setSize(sf::Vector2f(30.0f, 30.0f));
+	this->setSize(sf::Vector2f(scl * 2, scl * 2));
 }
 
 

@@ -2,7 +2,7 @@
 
 int main() {
 
-	std::cout << " ----------------- ";
+	//std::cout << " ----------------- ";
 	std::srand(static_cast<unsigned>(time(NULL)));
 	
 	Game snake;

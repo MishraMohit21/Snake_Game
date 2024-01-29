@@ -1,3 +1,53 @@
-﻿  Food.cpp
-C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Food.cpp(4,17): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+﻿  Game.cpp
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(35,66): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(35,66): warning C4244:         with
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(35,66): warning C4244:         [
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(35,66): warning C4244:             T=float
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(35,66): warning C4244:         ]
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(36,59): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(36,59): warning C4244:         with
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(36,59): warning C4244:         [
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(36,59): warning C4244:             T=float
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(36,59): warning C4244:         ]
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(38,48): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(38,48): warning C4244:         with
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(38,48): warning C4244:         [
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(38,48): warning C4244:             T=float
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(38,48): warning C4244:         ]
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(39,55): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(39,55): warning C4244:         with
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(39,55): warning C4244:         [
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(39,55): warning C4244:             T=float
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(39,55): warning C4244:         ]
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(40,48): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(40,48): warning C4244:         with
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(40,48): warning C4244:         [
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(40,48): warning C4244:             T=float
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(40,48): warning C4244:         ]
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(41,55): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(41,55): warning C4244:         with
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(41,55): warning C4244:         [
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(41,55): warning C4244:             T=float
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(41,55): warning C4244:         ]
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(82,23): warning C4305: '=': truncation from 'double' to 'T'
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(82,23): warning C4305:         with
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(82,23): warning C4305:         [
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(82,23): warning C4305:             T=float
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(82,23): warning C4305:         ]
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(92,22): warning C4305: '=': truncation from 'double' to 'T'
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(92,22): warning C4305:         with
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(92,22): warning C4305:         [
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(92,22): warning C4305:             T=float
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(92,22): warning C4305:         ]
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(101,22): warning C4305: '=': truncation from 'double' to 'T'
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(101,22): warning C4305:         with
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(101,22): warning C4305:         [
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(101,22): warning C4305:             T=float
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(101,22): warning C4305:         ]
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(111,23): warning C4305: '=': truncation from 'double' to 'T'
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(111,23): warning C4305:         with
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(111,23): warning C4305:         [
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(111,23): warning C4305:             T=float
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(111,23): warning C4305:         ]
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(245,20): warning C4018: '<': signed/unsigned mismatch
   Snake_Game.vcxproj -> C:\Dev\Game Dev\SFML_Framework\Snake_Game\Debug\Snake_Game.exe
