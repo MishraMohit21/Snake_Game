@@ -49,5 +49,6 @@ C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(111,23): warning C
 C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(111,23): warning C4305:         [
 C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(111,23): warning C4305:             T=float
 C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(111,23): warning C4305:         ]
-C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(245,20): warning C4018: '<': signed/unsigned mismatch
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(139,20): warning C4018: '<': signed/unsigned mismatch
+C:\Dev\Game Dev\SFML_Framework\Snake_Game\Snake_Game\Game.cpp(253,20): warning C4018: '<': signed/unsigned mismatch
   Snake_Game.vcxproj -> C:\Dev\Game Dev\SFML_Framework\Snake_Game\Debug\Snake_Game.exe

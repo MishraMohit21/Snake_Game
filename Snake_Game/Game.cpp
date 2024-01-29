@@ -126,7 +126,7 @@ void Game::PlaceFood()
 
 	food.setPosition(x, y);
 
-	std::cout << food.getPosition().x << " " << food.getPosition().y << "\n" ;
+	//std::cout << food.getPosition().x << " " << food.getPosition().y << "\n" ;
 }
 
 void Game::addSnakeTail()
@@ -134,7 +134,13 @@ void Game::addSnakeTail()
 	Snake sn;
 	sn.initColor();
 	this->Snake_Body.push_back(sn);
-	std::cout << this->Snake_Body.size();
+	//std::cout << this->Snake_Body.size();
+
+	for (int i = 0; i < this->Snake_Body.size(); i++)
+	{
+		std::cout << "Position of " << i << "  : " << this->Snake_Body[i].getPosition().x << " " << this->Snake_Body[i].getPosition().y << "\n";
+
+	}
 }
 
 Game::Game()
@@ -196,11 +202,13 @@ void Game::updateSnake()
 		this->Snake_Body[i].setPosition(sf::Vector2f(Snake_Body[i].getPosition() + speed *  scl));
 	}*/
 
-	for (int i = total; i > 1; i--)
+	for (int i = total; i > 0; i--)
 	{
-		Snake_Body[i].setPosition(this->Snake_Body[i - 1].getPosition());
+		Snake_Body[i].setPosition(this->Snake_Body[i - 1].getPosition().x - scl * speed.x * 4 , this->Snake_Body[i - 1].getPosition().y - scl * speed.y * 4);
 	}
 	this->Snake_Body[0].setPosition(sf::Vector2f(Snake_Body[0].getPosition() + speed * scl));
+
+
 
 	
 	//this->Snake_Body[this->total - 1].setPosition
@@ -214,7 +222,7 @@ void Game::updateFood()
 		this->addSnakeTail();
 		this->total++;
 		Point += food.givePoint();
-		std::cout << "Point: " << this->Point << "\n";
+		//std::cout << "Point: " << this->Point << "\n";
 	}
 }
 
