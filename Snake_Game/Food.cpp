@@ -7,7 +7,9 @@ void Food::Foodinit() {
 		point = 1;
 	}
 
-	this->setRadius(8.0f);
+	//this->setRadius(10.0f);
+	this->setSize(sf::Vector2f(scl, scl));
+
 
 	switch (static_cast<int>(point))
 	{

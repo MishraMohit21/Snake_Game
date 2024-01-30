@@ -20,7 +20,7 @@ void Game::initVar()
 void Game::initWindow()
 {
 	this->window = new sf::RenderWindow(this->windowSize, "Snake Game", sf::Style::Close | sf::Style::Titlebar | sf::Style::Resize);
-	this->window->setFramerateLimit(60);
+	this->window->setFramerateLimit(5);
 }
 
 void Game::initwalls()
@@ -79,7 +79,7 @@ void Game::pollEvent()
 				if (!(this->Verticalpressed))
 				{
 					this->speed.x = 0;
-					this->speed.y = -0.1;
+					this->speed.y = -1;
 					this->Verticalpressed = true;
 					this->Horizontalpressed = false;
 				}
@@ -89,7 +89,7 @@ void Game::pollEvent()
 				if (!(this->Verticalpressed))
 				{
 					this->speed.x = 0;
-					this->speed.y = 0.1;
+					this->speed.y = 1;
 					this->Verticalpressed = true;
 					this->Horizontalpressed = false;
 				}
@@ -98,7 +98,7 @@ void Game::pollEvent()
 			{
 				if (!(this->Horizontalpressed))
 				{
-					this->speed.x = 0.1;
+					this->speed.x = 1;
 					this->speed.y = 0;
 					this->Verticalpressed = false;
 					this->Horizontalpressed = true;
@@ -108,7 +108,7 @@ void Game::pollEvent()
 			{
 				if (!(this->Horizontalpressed))
 				{
-					this->speed.x = -0.1;
+					this->speed.x = -1;
 					this->speed.y = 0;
 					this->Verticalpressed = false;
 					this->Horizontalpressed = true;
@@ -201,15 +201,20 @@ void Game::updateSnake()
 	{
 		this->Snake_Body[i].setPosition(sf::Vector2f(Snake_Body[i].getPosition() + speed *  scl));
 	}*/
+	float mult = 1.0f;
 
 	for (int i = total; i > 0; i--)
 	{
-		Snake_Body[i].setPosition(this->Snake_Body[i - 1].getPosition().x - scl * speed.x * 4 , this->Snake_Body[i - 1].getPosition().y - scl * speed.y * 4);
+		Snake_Body[i].setPosition(this->Snake_Body[i - 1].getPosition().x - scl * speed.x * mult , this->Snake_Body[i - 1].getPosition().y - scl * speed.y * mult);
 	}
 	this->Snake_Body[0].setPosition(sf::Vector2f(Snake_Body[0].getPosition() + speed * scl));
 
 
-
+	for (int i = 1; i < this->Snake_Body.size(); i++)
+	{
+		if (this->Snake_Body[i].getGlobalBounds().contains(this->Snake_Body[0].getPosition()))
+			this->endgame = true;
+	}
 	
 	//this->Snake_Body[this->total - 1].setPosition
 }
@@ -218,10 +223,10 @@ void Game::updateFood()
 {
 	if (Snake_Body[0].getGlobalBounds().contains(food.getPosition()))
 	{
+		Point += food.givePoint();
 		this->PlaceFood();
 		this->addSnakeTail();
 		this->total++;
-		Point += food.givePoint();
 		//std::cout << "Point: " << this->Point << "\n";
 	}
 }
